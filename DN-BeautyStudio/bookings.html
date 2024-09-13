@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emily Nguyen">
+    <meta name="keywords" content="DN Beauty Studio, lash, brows, lip blush, Cary NC, beauty services">
+    <meta name="description" content="Welcome to DN Beauty Studio, offering professional lash, brows, and lip blush services in Cary, NC. Explore our services, book appointments, and enhance your natural beauty today.">
+    <title>DN Beauty Studio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+    
+<body>
+    <!--Header-->
+    <header>
+        <img src="images/logo.png" alt="Icon" class="header-icon">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href = "faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="bookings-section">
+        <!--Title-->
+        <h1 class="title">Booking</h1>
+
+        <!--Form to Book Appointment-->
+        <div id="booking-section">
+            <form action="your_information.html">
+
+                <div class="booking-container">
+                    <div class="service">
+                        <input type="checkbox" id="service1" name="service" value="Service 1">
+                        <label for="service1">
+                            <span class="booking-title">Classic Full Set</span>
+                            <span class="booking-content">$200<br>1 hour 40 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service2" name="service" value="Service 2">
+                        <label for="service2">
+                            <span class="booking-title">Wispy/Volume Full Set</span>
+                            <span class="booking-content">$250<br>2 hours</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service3" name="service" value="Service 3">
+                        <label for="service3">
+                            <span class="booking-title">Lash Lift</span>
+                            <span class="booking-content">$110<br>1 hour 10 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service4" name="service" value="Service 4">
+                        <label for="service4">
+                            <span class="booking-title">Lash Fill in</span>
+                            <span class="booking-content">$100-$130<br>1 hour 45 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service5" name="service" value="Service 5">
+                        <label for="service5">
+                            <span class="booking-title">Combination Brows</span>
+                            <span class="booking-content">$600<br>2 hours 30 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service6" name="service" value="Service 6">
+                        <label for="service6">
+                            <span class="booking-title">Brow Lamination</span>
+                            <span class="booking-content">$100<br>30 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service7" name="service" value="Service 7">
+                        <label for="service7">
+                            <span class="booking-title">Microblading</span>
+                            <span class="booking-content">$550<br>2 hours 30 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service8" name="service" value="Service 8">
+                        <label for="service8">
+                            <span class="booking-title">Powder Brow</span>
+                            <span class="booking-content">$550<br>2 hours 30 minutes</span>
+                        </label>
+                    </div>
+        
+                    <div class="service">
+                        <input type="checkbox" id="service9" name="service" value="Service 9">
+                        <label for="service9">
+                            <span class="booking-title">Lip Blush</span>
+                            <span class="booking-content">$400<br>3 hours 30 minutes</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!--Select Time-->
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <!--Continue Button-->
+                <button type="submit">Continue</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DN Beauty Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

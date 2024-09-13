@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emily Nguyen">
+    <meta name="keywords" content="DN Beauty Studio, lash, brows, lip blush, Cary NC, beauty services">
+    <meta name="description" content="Welcome to DN Beauty Studio, offering professional lash, brows, and lip blush services in Cary, NC. Explore our services, book appointments, and enhance your natural beauty today.">
+    <title>DN Beauty Studio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+    
+<body>
+    <!--Header-->
+    <header>
+        <img src="images/logo.png" alt="Icon" class="header-icon">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href = "faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="your-info-container">
+        <!--Title-->
+        <h1 class="title">Your Information</h1>
+
+        <!--Your Information Form-->
+        <form id="appointment-form" action="#" class="your-information-form" onsubmit="showPopup(event)">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="notes">Appointment Notes (optional):</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms and Conditions</label><br>
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <!--Terms and Conditions-->
+        <h2>Terms & Conditions</h2>
+        <p class="terms-conditions">
+            By booking an appointment with DN Beauty Studio, you agree to abide by the following terms and conditions. All appointments require a non-refundable deposit to secure your booking, which will be deducted from the total service cost.<br>
+            <br>
+            Cancellations must be made at least 24 hours in advance; failure to do so may result in forfeiture of your deposit. Late arrivals may result in a shortened appointment time to accommodate other clients.<br>
+            <br>
+            We strive to provide exceptional service, but please note that individual results may vary depending on factors such as skin type and aftercare.<br>
+            <br>
+            By booking an appointment, you acknowledge that you have read and understood our terms and conditions.<br>
+        </p>
+
+        <!--Popup Message-->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Thank you for choosing DN Beauty!</h2>
+                <p>We have received your appointment request.</p>
+                <a href="index.html" onclick="hidePopup()">Home</a>
+                <a href="bookings.html" onclick="hidePopup()">Book Another Appointment</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DN Beauty Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
